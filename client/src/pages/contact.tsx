@@ -54,23 +54,6 @@ export default function Contact() {
                 Send Message
               </Button>
            </form>
-
-           <div className="mt-20 pt-10 border-t border-primary/10 grid md:grid-cols-2 gap-8 text-center md:text-left">
-              <div>
-                 <h4 className="font-serif text-lg text-primary mb-2">Office</h4>
-                 <p className="text-muted-foreground font-light text-sm">
-                    Paygate Farm, Palehouse Common<br />
-                    Framfield, East Sussex, TN22 5QY
-                 </p>
-              </div>
-              <div>
-                 <h4 className="font-serif text-lg text-primary mb-2">Hours</h4>
-                 <p className="text-muted-foreground font-light text-sm">
-                    Monday – Thursday<br />
-                    9:30am – 5:30pm
-                 </p>
-              </div>
-           </div>
         </div>
       </main>
       <Footer />

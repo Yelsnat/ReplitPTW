@@ -22,6 +22,7 @@ export function Navbar() {
   const navLinks = [
     { name: "Our Story", href: "/source" },
     { name: "Our Products", href: "/products" },
+    { name: "Our Dream", href: "/dream" },
     { name: "Home Delivery", href: "/delivery" },
     { name: "Contact", href: "/contact" },
   ];
