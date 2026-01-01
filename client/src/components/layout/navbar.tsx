@@ -20,6 +20,7 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
+    { name: "Welcome", href: "/" },
     { name: "The Source", href: "/source" },
     { name: "Our Water", href: "/products" },
     { name: "Home Delivery", href: "/delivery" },
