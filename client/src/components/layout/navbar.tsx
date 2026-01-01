@@ -2,7 +2,6 @@ import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   const [location] = useLocation();
@@ -20,9 +19,9 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Our Story", href: "/source" },
+    { name: "Our Story", href: "/dream" },
+    { name: "Our Water", href: "/source" },
     { name: "Our Products", href: "/products" },
-    { name: "Our Dream", href: "/dream" },
     { name: "Home Delivery", href: "/delivery" },
     { name: "Contact", href: "/contact" },
   ];
@@ -61,12 +60,6 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button variant="outline" className={cn(
-            "rounded-none px-6 border-current transition-colors",
-            (isHome && !isScrolled) ? "hover:bg-white hover:text-black" : "hover:bg-primary hover:text-white"
-          )}>
-            Order Now
-          </Button>
         </div>
 
         {/* Mobile Toggle */}
