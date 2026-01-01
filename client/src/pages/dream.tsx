@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
-import textureImage from "@assets/generated_images/nature_texture_wet_leaves_and_stone.png";
+import dreamImage from "@assets/generated_images/ethereal_dream_of_treasure_under_a_pear_tree_in_water.png";
 
 export default function Dream() {
   return (
@@ -20,13 +20,13 @@ export default function Dream() {
               <h1 className="text-5xl md:text-7xl font-serif text-primary">The Dream</h1>
             </div>
 
-            <div className="aspect-video overflow-hidden bg-muted relative group">
+            <div className="aspect-video overflow-hidden bg-muted relative group shadow-2xl">
               <img
-                src={textureImage}
-                alt="Nature textures"
+                src={dreamImage}
+                alt="Ethereal dream of treasure under a pear tree"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-black/20" />
+              <div className="absolute inset-0 bg-black/10" />
             </div>
 
             <div className="grid md:grid-cols-1 gap-12 text-lg font-light leading-relaxed text-muted-foreground">
