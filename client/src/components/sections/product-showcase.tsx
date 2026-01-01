@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 import productImage from "@assets/generated_images/pear_tree_well_water_bottle_packaging.png";
 
 const products = [
@@ -73,23 +74,25 @@ export function ProductShowcase() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="group cursor-pointer text-center"
+              className="group text-center"
             >
-              <div className="relative aspect-[3/4] mb-6 bg-gray-50 flex items-center justify-center p-8 overflow-hidden">
-                <img 
-                  src={productImage} 
-                  alt={product.name}
-                  className="h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-4 left-4 bg-primary/5 text-primary text-[10px] px-2 py-1 uppercase tracking-widest font-semibold">
-                  {product.category}
+              <Link href="/contact" className="block cursor-pointer">
+                <div className="relative aspect-[3/4] mb-6 bg-gray-50 flex items-center justify-center p-8 overflow-hidden">
+                  <img 
+                    src={productImage} 
+                    alt={product.name}
+                    className="h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 left-4 bg-primary/5 text-primary text-[10px] px-2 py-1 uppercase tracking-widest font-semibold">
+                    {product.category}
+                  </div>
                 </div>
-              </div>
-              <h3 className="text-xl font-serif text-primary mb-1 leading-tight">{product.name}</h3>
-              <p className="text-muted-foreground text-sm mb-2">{product.size} {product.type}</p>
-              <span className="text-xs uppercase tracking-widest border-b border-primary/20 pb-1 group-hover:border-primary transition-colors opacity-0 group-hover:opacity-100 duration-300">
-                Inquire Now
-              </span>
+                <h3 className="text-xl font-serif text-primary mb-1 leading-tight">{product.name}</h3>
+                <p className="text-muted-foreground text-sm mb-2">{product.size} {product.type}</p>
+                <span className="text-xs uppercase tracking-widest border-b border-primary/20 pb-1 group-hover:border-primary transition-colors opacity-0 group-hover:opacity-100 duration-300">
+                  Inquire Now
+                </span>
+              </Link>
             </motion.div>
           ))}
         </div>
