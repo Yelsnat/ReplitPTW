@@ -19,7 +19,7 @@ export function Navbar() {
   const navLinks = [
     { name: "The Source", href: "#source" },
     { name: "Our Water", href: "#products" },
-    { name: "Sustainability", href: "#sustainability" },
+    { name: "Home Delivery", href: "#delivery" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -37,7 +37,7 @@ export function Navbar() {
           "text-2xl font-serif tracking-widest font-bold uppercase z-50 relative",
            !isScrolled && "text-white"
         )}>
-            Fonte Pura
+            Pear Tree Well
         </Link>
 
         {/* Desktop Nav */}
@@ -52,7 +52,7 @@ export function Navbar() {
             </a>
           ))}
           <Button variant="outline" className="rounded-none px-6 border-current hover:bg-white hover:text-black transition-colors">
-            Shop Now
+            Order Now
           </Button>
         </div>
 

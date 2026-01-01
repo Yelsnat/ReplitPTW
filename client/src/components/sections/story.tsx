@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import textureImage from "@assets/generated_images/nature_texture_wet_leaves_and_stone.png";
-import { Button } from "@/components/ui/button";
+import productImage from "@assets/generated_images/pear_tree_well_water_bottle_packaging.png";
 
 export function Story() {
   return (
@@ -17,13 +16,11 @@ export function Story() {
           >
             <div className="aspect-[4/5] overflow-hidden bg-muted">
               <img
-                src={textureImage}
-                alt="Textures of the spring"
+                src={productImage}
+                alt="Pear Tree Well Bottle"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
               />
             </div>
-            {/* Decorative Offset Border */}
-            <div className="absolute -bottom-6 -right-6 w-full h-full border border-primary/20 -z-10 hidden md:block" />
           </motion.div>
 
           {/* Text Side */}
@@ -35,25 +32,30 @@ export function Story() {
             className="space-y-8"
           >
             <span className="text-sm uppercase tracking-widest text-primary/60 font-semibold">
-              The Territory
+              Our Origin
             </span>
             <h2 className="text-4xl md:text-5xl font-serif text-primary leading-tight">
-              A journey through stone and time.
+              The Only Mineral Water Bottled at Source in Sussex.
             </h2>
             <div className="space-y-6 text-muted-foreground font-light leading-relaxed text-lg">
               <p>
-                Fonte Pura originates from a protected aquifer deep within the Italian Dolomites. 
-                The water begins its journey as snowmelt, filtering slowly through layers of 
-                limestone and dolomite rock for over 15 years.
+                Our water comes from a source 120 feet deep, confined beneath a 5ft thick layer of rock in the heart of the High Weald.
               </p>
               <p>
-                This natural filtration process enriches the water with a unique balance of minerals, 
-                giving it a remarkably light taste and low sodium content suitable for the finest dining experiences.
+                When drawn from the well, it's the first time it has seen the light of day for thousands of years. 
+                With at least 16 natural minerals and a balanced pH, it is truly nature's own creation.
               </p>
             </div>
-            <Button variant="outline" className="rounded-none border-primary text-primary hover:bg-primary hover:text-white px-8 py-6 h-auto text-sm tracking-widest uppercase transition-all">
-              Discover Our Origin
-            </Button>
+            <div className="pt-4 grid grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-serif text-2xl text-primary mb-2">120ft</h4>
+                <p className="text-sm uppercase tracking-wider text-muted-foreground">Well Depth</p>
+              </div>
+              <div>
+                <h4 className="font-serif text-2xl text-primary mb-2">16+</h4>
+                <p className="text-sm uppercase tracking-wider text-muted-foreground">Natural Minerals</p>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

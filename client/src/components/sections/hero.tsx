@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImage from "@assets/generated_images/mountain_spring_water_hero_background.png";
+import heroImage from "@assets/generated_images/pear_tree_orchard_with_a_well.png";
 import { ArrowDown } from "lucide-react";
 
 export function Hero() {
@@ -9,10 +9,10 @@ export function Hero() {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Pristine mountain spring"
+          alt="Pear Tree Orchard with a Well"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       {/* Content */}
@@ -23,14 +23,14 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
         >
           <span className="block text-sm md:text-base uppercase tracking-[0.3em] mb-4 text-white/90">
-            Italian Alps Mineral Water
+            Naturally Structured Sussex Mineral Water
           </span>
           <h1 className="text-5xl md:text-7xl lg:text-9xl font-serif font-medium tracking-tight mb-8">
-            Pure by Nature
+            Nature's Own Creation
           </h1>
-          <p className="max-w-xl mx-auto text-lg md:text-xl font-light text-white/80 leading-relaxed mb-10">
-            Born from the heart of the mountains, filtered through ancient rock, 
-            delivered to your table with untouched purity.
+          <p className="max-w-2xl mx-auto text-lg md:text-xl font-light text-white/80 leading-relaxed mb-10">
+            Bottled at source from a 120ft deep aquifer in the heart of the High Weald. 
+            Pure, unadulterated, and untouched for thousands of years.
           </p>
         </motion.div>
       </div>
