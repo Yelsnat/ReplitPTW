@@ -27,9 +27,11 @@ export function Hero() {
           <h1 className="text-5xl md:text-7xl lg:text-9xl font-serif font-medium tracking-tight mb-8">
             Nature's Own Creation
           </h1>
-          <p className="max-w-2xl mx-auto text-lg md:text-xl font-light text-white/80 leading-relaxed mb-10">
-            Born in the heart of the High Weald, bottled at source from a 120ft deep aquifer and delivered to your table with untouched purity.
-          </p>
+          <div className="max-w-3xl mx-auto text-lg md:text-xl font-light text-white/80 leading-relaxed space-y-2">
+            <p>Born in the heart of the High Weald.</p>
+            <p>Bottled at source from a 120ft deep aquifer.</p>
+            <p>Delivered to your table with untouched purity.</p>
+          </div>
         </motion.div>
       </div>
     </section>
