@@ -33,13 +33,13 @@ export default function Delivery() {
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <main className="pt-32">
-        {/* Hero Header */}
-        <section className="container mx-auto px-6 mb-20 text-center">
+        {/* Clean Header without ribbon */}
+        <section className="bg-background py-24 mb-0 text-center border-b border-primary/5">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-3xl mx-auto"
+            className="max-w-3xl mx-auto px-6"
           >
             <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">Our Service</span>
             <h1 className="text-5xl md:text-7xl font-serif text-primary mb-8">Home Delivery</h1>
@@ -51,11 +51,11 @@ export default function Delivery() {
         </section>
 
         {/* Coverage Section */}
-        <section className="bg-secondary/30 py-24 mb-24">
+        <section className="bg-white py-24 mb-24">
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 text-left">
                   <MapPin className="w-6 h-6 text-primary shrink-0 mt-1" />
                   <div>
                     <h3 className="text-2xl font-serif text-primary mb-4">Where We Deliver</h3>
@@ -74,7 +74,7 @@ export default function Delivery() {
               </div>
               
               <div className="space-y-12">
-                <div className="grid gap-8">
+                <div className="grid gap-8 text-left">
                   {deliverySteps.map((step, i) => (
                     <motion.div
                       key={step.title}
@@ -100,7 +100,7 @@ export default function Delivery() {
         </section>
 
         {/* Doorstep & Reusable Section */}
-        <section className="container mx-auto px-6 py-24 border-t border-primary/10">
+        <section className="container mx-auto px-6 py-24 border-t border-primary/10 text-left">
           <div className="grid md:grid-cols-2 gap-20 items-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}

@@ -1,31 +1,32 @@
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import dreamImage from "@assets/generated_images/ethereal_dream_of_treasure_under_a_pear_tree_in_water.png";
 
 export default function Dream() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <main className="pt-32">
-        {/* Header with background color */}
-        <section className="bg-secondary/30 py-24 mb-0 text-center border-b border-primary/5">
+        {/* Clean Header without ribbon */}
+        <section className="bg-background py-24 mb-0 text-center border-b border-primary/5">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto px-6"
           >
-            <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">The Heritage of Pear Tree Well</span>
+            <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">The Story of Pear Tree Well</span>
             <h1 className="text-5xl md:text-7xl font-serif text-primary mb-8">Our Story</h1>
             <p className="text-xl font-light text-muted-foreground leading-relaxed">
-              A vision that became a reality—the extraordinary journey of discovering Sussex's hidden treasure.
+              The "treasure" beneath the pear tree—a journey of faith, persistence, and nature's gift.
             </p>
           </motion.div>
         </section>
 
         {/* Section 1: The Vision */}
         <section className="py-24 md:py-32 bg-white overflow-hidden">
-          <div className="container mx-auto px-6 max-w-4xl">
+          <div className="container mx-auto px-6 max-w-4xl text-left">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}

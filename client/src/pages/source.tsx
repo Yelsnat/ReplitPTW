@@ -8,7 +8,8 @@ export default function Source() {
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <main className="pt-32">
-        <section className="bg-secondary/30 py-24 mb-0 text-center border-b border-primary/5">
+        {/* Clean Header without ribbon */}
+        <section className="bg-background py-24 mb-0 text-center border-b border-primary/5">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
