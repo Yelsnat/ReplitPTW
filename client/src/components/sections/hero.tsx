@@ -27,7 +27,7 @@ export function Hero() {
           <h1 className="text-5xl md:text-7xl lg:text-9xl font-serif font-medium tracking-tight mb-8">
             The Water is the Treasure
           </h1>
-          <div className="max-w-3xl mx-auto text-lg md:text-xl font-serif font-light text-white/80 leading-relaxed space-y-2">
+          <div className="max-w-3xl mx-auto text-lg md:text-xl font-serif font-light text-white/80 leading-relaxed space-y-2 uppercase tracking-widest">
             <p>Born in the heart of the High Weald.</p>
             <p>Bottled at source from a 120ft deep aquifer.</p>
             <p>Delivered to your table with untouched purity.</p>
