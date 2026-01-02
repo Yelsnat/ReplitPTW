@@ -25,7 +25,7 @@ export function Hero() {
             Pure Sussex Mineral Water
           </span>
           <h1 className="text-5xl md:text-7xl lg:text-9xl font-serif font-medium tracking-tight mb-8">
-            Nature's Own Creation
+            The Water is the Treasure
           </h1>
           <div className="max-w-3xl mx-auto text-lg md:text-xl font-light text-white/80 leading-relaxed space-y-2">
             <p>Born in the heart of the High Weald.</p>
