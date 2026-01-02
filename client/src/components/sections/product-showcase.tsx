@@ -58,11 +58,11 @@ export function ProductShowcase() {
     <section id="products" className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-20">
-          <span className="text-sm uppercase tracking-widest text-primary/60 font-semibold mb-4 block">
+          <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">
             Our Collection
           </span>
-          <h2 className="text-4xl md:text-5xl font-serif text-primary">
-            Mineral Water & Specialty Products
+          <h2 className="text-5xl md:text-7xl font-serif text-primary">
+            Our Products
           </h2>
         </div>
 

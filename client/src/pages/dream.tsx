@@ -8,16 +8,16 @@ export default function Dream() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main className="pt-32 pb-24">
-        <div className="container mx-auto px-6 max-w-4xl">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="space-y-12"
           >
-            <div className="text-center space-y-4">
-              <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold">The Story of Pear Tree Well</span>
-              <h1 className="text-5xl md:text-7xl font-serif text-primary">The Dream</h1>
+            <div className="space-y-4">
+              <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">The Story of Pear Tree Well</span>
+              <h1 className="text-5xl md:text-7xl font-serif text-primary">Our Story</h1>
             </div>
 
             <div className="aspect-video overflow-hidden bg-muted relative group shadow-2xl">
@@ -29,7 +29,7 @@ export default function Dream() {
               <div className="absolute inset-0 bg-black/10" />
             </div>
 
-            <div className="grid md:grid-cols-1 gap-12 text-lg font-light leading-relaxed text-muted-foreground">
+            <div className="grid md:grid-cols-1 gap-12 text-lg font-light leading-relaxed text-muted-foreground text-left">
               <div className="space-y-6">
                 <p className="text-2xl font-serif text-primary italic leading-relaxed">
                   “The amazing story started in 1998 when I had a vivid dream about the withered old pear tree in my back garden, and heard a voice telling me that there was treasure under it."
