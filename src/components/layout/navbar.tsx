@@ -8,7 +8,7 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const isHome = location === "/";
+  const isHome = location === "/" || location === "";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +26,8 @@ export function Navbar() {
     { name: "Contact", href: "/contact" },
   ];
 
+  const getHref = (href: string) => `#${href}`;
+
   return (
     <nav
       className={cn(
@@ -36,7 +38,7 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className={cn(
+        <Link href={getHref("/")} className={cn(
           "text-2xl font-serif tracking-widest font-bold uppercase z-50 relative",
            (isHome && !isScrolled) ? "text-white" : "text-primary"
         )}>
@@ -51,7 +53,7 @@ export function Navbar() {
           {navLinks.map((link) => (
             <Link
               key={link.name}
-              href={link.href}
+              href={getHref(link.href)}
               className={cn(
                 "text-sm uppercase tracking-widest hover:opacity-70 transition-opacity",
                 location === link.href && "font-semibold border-b border-current"
@@ -79,7 +81,7 @@ export function Navbar() {
             {navLinks.map((link) => (
               <Link
                 key={link.name}
-                href={link.href}
+                href={getHref(link.href)}
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-2xl font-serif"
               >

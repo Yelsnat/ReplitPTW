@@ -85,7 +85,7 @@ export function ProductShowcase() {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               className="group text-center"
             >
-              <Link href="/contact" className="block cursor-pointer">
+              <Link href="#/contact" className="block cursor-pointer">
                 <div className="relative aspect-[3/4] mb-6 bg-gray-50 flex items-center justify-center p-8 overflow-hidden">
                   <img 
                     src={productImage} 
