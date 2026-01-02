@@ -8,12 +8,12 @@ export default function Source() {
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <main className="pt-32">
-        <section className="container mx-auto px-6 mb-20 text-center">
+        <section className="bg-secondary/30 py-24 mb-0 text-center border-b border-primary/5">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-3xl mx-auto"
+            className="max-w-3xl mx-auto px-6"
           >
             <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">The Territory</span>
             <h1 className="text-5xl md:text-7xl font-serif text-primary mb-8">Our Water</h1>
