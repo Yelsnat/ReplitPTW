@@ -34,7 +34,7 @@ export default function Dream() {
               className="space-y-12"
             >
               <div className="space-y-6 text-lg font-light leading-relaxed text-muted-foreground">
-                <h3 className="text-3xl font-serif text-primary italic">The First Dream</h3>
+                <h3 className="text-3xl font-serif text-primary italic">The Dream</h3>
                 <p>
                   The amazing story started in 1998 when David Pursglove had a vivid dream about the withered old pear tree in his back garden. A voice, clear and resonant, spoke to him in the silence of the night, telling him that there was treasure hidden deep beneath its roots.
                 </p>
@@ -79,7 +79,7 @@ export default function Dream() {
                viewport={{ once: true }}
                className="space-y-12"
              >
-                <h3 className="text-3xl font-serif text-primary">A Journey Through Time</h3>
+                <h3 className="text-3xl font-serif text-primary italic">The Treasure</h3>
                 <div className="space-y-6 text-lg font-light text-muted-foreground leading-relaxed">
                   <p>
                     David hired a geologist, who remained skeptical about finding significant water in this specific part of Sussex. But David’s faith was unshakeable. After several grueling days of drilling, the team struck a formidable layer of rock five feet thick.
