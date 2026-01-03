@@ -37,7 +37,7 @@ export function Navbar() {
           : "bg-transparent py-6 text-white"
       )}
     >
-      <div className="container-fluid mx-auto px-4 flex items-center justify-between">
+      <div className="container-fluid mx-auto px-8 flex items-center justify-between">
         <Link href="/" className={cn(
           "text-xl md:text-2xl font-serif tracking-widest font-bold uppercase z-50 relative",
            (isHome && !isScrolled) ? "text-white" : "text-primary"
