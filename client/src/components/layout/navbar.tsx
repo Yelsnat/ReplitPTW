@@ -2,6 +2,7 @@ import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoNoBg from "@/assets/Logo_No_Background.png";
 
 export function Navbar() {
   const [location] = useLocation();
@@ -38,11 +39,21 @@ export function Navbar() {
       )}
     >
       <div className="container-fluid mx-auto px-8 flex items-center justify-between">
-        <Link href="/" className={cn(
-          "text-xl md:text-2xl font-serif tracking-widest font-bold uppercase z-50 relative",
-           (isHome && !isScrolled) ? "text-white" : "text-primary"
-        )}>
-            Pear Tree Well
+        <Link href="/" className="flex items-center gap-4 z-50 relative group">
+            <img 
+              src={logoNoBg} 
+              alt="Pear Tree Well" 
+              className={cn(
+                "h-12 w-auto transition-all duration-300 group-hover:scale-110",
+                (isHome && !isScrolled) ? "brightness-0 invert" : ""
+              )}
+            />
+            <span className={cn(
+              "text-xl md:text-2xl font-serif tracking-widest font-bold uppercase",
+               (isHome && !isScrolled) ? "text-white" : "text-primary"
+            )}>
+                Pear Tree Well
+            </span>
         </Link>
 
         {/* Desktop Nav */}

@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import logoBg from "@/assets/Logo_Upscaled.jpg";
 
 export function Footer() {
   return (
@@ -6,8 +7,15 @@ export function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
-            <Link href="/" className="text-3xl font-serif font-bold uppercase tracking-widest mb-6 block">
-                Pear Tree Well
+            <Link href="/" className="flex flex-col gap-6 mb-8 group">
+                <img 
+                  src={logoBg} 
+                  alt="Pear Tree Well" 
+                  className="w-32 h-auto rounded-lg shadow-xl transition-transform duration-300 group-hover:scale-105" 
+                />
+                <span className="text-3xl font-serif font-bold uppercase tracking-widest block text-white">
+                    Pear Tree Well
+                </span>
             </Link>
             <p className="max-w-md text-primary-foreground/70 font-light mb-8">
               Naturally structured mineral water from the heart of the High Weald. 

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroImage from "@assets/generated_images/pear_tree_orchard_with_a_well.png";
+import logoNoBg from "@/assets/Logo_No_Background.png";
 
 export function Hero() {
   return (
@@ -20,7 +21,13 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
+          className="flex flex-col items-center"
         >
+          <img 
+            src={logoNoBg} 
+            alt="Pear Tree Well Logo" 
+            className="w-24 md:w-32 h-auto mb-8 brightness-0 invert opacity-90 drop-shadow-2xl"
+          />
           <span className="block text-base md:text-lg uppercase tracking-[0.3em] mb-4 text-white/90 border-b border-white/40 pb-1 w-fit mx-auto">
             Pure Sussex Mineral Water
           </span>
