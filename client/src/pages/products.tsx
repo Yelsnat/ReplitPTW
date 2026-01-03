@@ -61,7 +61,7 @@ export default function Products() {
       <Navbar />
       <main className="pt-32">
         {/* Clean Header without ribbon */}
-        <section className="bg-background py-24 mb-0 text-center border-b border-primary/5">
+        <section className="bg-background py-16 mb-0 text-center border-b border-primary/5">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

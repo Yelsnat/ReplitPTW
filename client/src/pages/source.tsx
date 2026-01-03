@@ -9,7 +9,7 @@ export default function Source() {
       <Navbar />
       <main className="pt-32">
         {/* Clean Header without ribbon */}
-        <section className="bg-background py-24 mb-0 text-center border-b border-primary/5">
+        <section className="bg-background py-16 mb-0 text-center border-b border-primary/5">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ export default function Source() {
           </motion.div>
         </section>
 
-        <section className="py-12 md:py-16 bg-white overflow-hidden">
+        <section className="py-12 bg-white overflow-hidden">
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <motion.div

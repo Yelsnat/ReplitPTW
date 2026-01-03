@@ -23,7 +23,7 @@ export default function Contact() {
       <Navbar />
       <main className="pt-32">
         {/* Clean Header without ribbon */}
-        <section className="bg-background py-24 mb-0 text-center border-b border-primary/5">
+        <section className="bg-background py-16 mb-0 text-center border-b border-primary/5">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ export default function Contact() {
           </motion.div>
         </section>
 
-        <section className="py-12 md:py-16 bg-white">
+        <section className="py-12 bg-white">
           <div className="container mx-auto px-6 max-w-2xl">
             <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
