@@ -105,7 +105,7 @@ export default function Delivery() {
           </p>
           <div className="flex justify-center gap-4">
             <a href="/contact" className="inline-block px-10 py-4 bg-primary text-white uppercase tracking-widest text-sm hover:bg-primary/90 transition-colors">
-              Start Your Order
+              Get In Touch
             </a>
           </div>
         </section>
