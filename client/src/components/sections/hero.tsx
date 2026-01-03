@@ -24,7 +24,7 @@ export function Hero() {
           <span className="block text-base md:text-lg uppercase tracking-[0.3em] mb-4 text-white/90 border-b border-white/40 pb-1 w-fit mx-auto">
             Pure Sussex Mineral Water
           </span>
-          <h1 className="text-5xl md:text-7xl lg:text-9xl font-serif font-medium tracking-tight mb-8">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif font-medium tracking-tight mb-8">
             The Water is the Treasure
           </h1>
           <div className="max-w-3xl mx-auto text-lg md:text-xl font-serif font-light text-white/80 leading-relaxed space-y-2 uppercase tracking-widest">
