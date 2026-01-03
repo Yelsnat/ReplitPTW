@@ -39,21 +39,15 @@ export function Navbar() {
       )}
     >
       <div className="container-fluid mx-auto px-8 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-4 z-50 relative group">
+        <Link href="/" className="flex items-center z-50 relative group">
             <img 
               src={logoNoBg} 
               alt="Pear Tree Well" 
               className={cn(
-                "h-12 w-auto transition-all duration-300 group-hover:scale-110",
+                "h-16 md:h-20 w-auto transition-all duration-300 group-hover:scale-110",
                 (isHome && !isScrolled) ? "brightness-0 invert" : ""
               )}
             />
-            <span className={cn(
-              "text-xl md:text-2xl font-serif tracking-widest font-bold uppercase",
-               (isHome && !isScrolled) ? "text-white" : "text-primary"
-            )}>
-                Pear Tree Well
-            </span>
         </Link>
 
         {/* Desktop Nav */}

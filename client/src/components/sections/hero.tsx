@@ -26,7 +26,7 @@ export function Hero() {
           <img 
             src={logoNoBg} 
             alt="Pear Tree Well Logo" 
-            className="w-24 md:w-32 h-auto mb-8 brightness-0 invert opacity-90 drop-shadow-2xl"
+            className="w-32 md:w-48 h-auto mb-8 brightness-0 invert opacity-90 drop-shadow-2xl"
           />
           <span className="block text-base md:text-lg uppercase tracking-[0.3em] mb-4 text-white/90 border-b border-white/40 pb-1 w-fit mx-auto">
             Pure Sussex Mineral Water
