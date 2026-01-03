@@ -34,8 +34,8 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent",
         (isScrolled || !isHome)
-          ? "bg-background/90 backdrop-blur-md py-4 border-border/40 shadow-sm"
-          : "bg-transparent py-6 text-white"
+          ? "bg-background/90 backdrop-blur-md py-6 border-border/40 shadow-sm"
+          : "bg-transparent py-12 text-white"
       )}
     >
       <div className="container-fluid mx-auto px-8 flex items-center justify-between">
