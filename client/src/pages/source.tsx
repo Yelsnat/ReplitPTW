@@ -24,7 +24,7 @@ export default function Source() {
           </motion.div>
         </section>
 
-        <section className="py-24 md:py-32 bg-white overflow-hidden">
+        <section className="py-12 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <motion.div

@@ -51,7 +51,7 @@ export default function Delivery() {
         </section>
 
         {/* Coverage Section */}
-        <section className="bg-white py-24 mb-24">
+        <section className="bg-white py-12 md:py-16 mb-24">
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
@@ -100,7 +100,7 @@ export default function Delivery() {
         </section>
 
         {/* Doorstep & Reusable Section */}
-        <section className="container mx-auto px-6 py-24 border-t border-primary/10 text-left">
+        <section className="container mx-auto px-6 py-12 md:py-16 border-t border-primary/10 text-left">
           <div className="grid md:grid-cols-2 gap-20 items-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}

@@ -25,7 +25,7 @@ export default function Dream() {
         </section>
 
         {/* Section 1: The Vision */}
-        <section className="py-24 md:py-32 bg-white overflow-hidden">
+        <section className="py-12 md:py-16 bg-white overflow-hidden">
           <div className="container mx-auto px-6 max-w-4xl text-left">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -48,7 +48,7 @@ export default function Dream() {
         </section>
 
         {/* Section 2: The Treasure */}
-        <section className="py-24 bg-primary text-white overflow-hidden">
+        <section className="py-12 md:py-16 bg-primary text-white overflow-hidden">
           <div className="container mx-auto px-6 max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -62,7 +62,7 @@ export default function Dream() {
                 <p className="text-3xl md:text-4xl font-serif">“No, there was no treasure”, David replied.</p>
                 <p className="text-3xl md:text-4xl font-serif">“What did you find?”</p>
                 <p className="text-3xl md:text-4xl font-serif italic">“Just water.”</p>
-                <p className="text-4xl md:text-5xl font-serif text-white">“The water is the treasure.”</p>
+                <p className="text-3xl md:text-4xl font-serif text-white">“The water is the treasure.”</p>
               </blockquote>
               <p className="text-xl font-light opacity-80 leading-relaxed">
                 This realization changed everything. The "treasure" wasn't precious metal—it was the very essence of life itself, hidden for thousands of years beneath the Sussex soil.
@@ -72,7 +72,7 @@ export default function Dream() {
         </section>
 
         {/* Section 3: The Reality */}
-        <section className="py-24 md:py-40 bg-white">
+        <section className="py-12 md:py-20 bg-white">
           <div className="container mx-auto px-6 max-w-4xl">
              <motion.div 
                initial={{ opacity: 0, y: 30 }}

@@ -76,7 +76,7 @@ export default function Products() {
           </motion.div>
         </section>
 
-        <section className="py-24 bg-white">
+        <section className="py-12 bg-white">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16 items-start">
               {products.map((product, index) => (

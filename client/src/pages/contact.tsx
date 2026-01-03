@@ -38,7 +38,7 @@ export default function Contact() {
           </motion.div>
         </section>
 
-        <section className="py-24 bg-white">
+        <section className="py-12 md:py-16 bg-white">
           <div className="container mx-auto px-6 max-w-2xl">
             <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
