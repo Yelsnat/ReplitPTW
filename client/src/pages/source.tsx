@@ -117,6 +117,10 @@ export default function Source() {
                 </motion.div>
               ))}
             </div>
+
+            <div className="mt-20 p-8 bg-primary/5 border-l-4 border-primary italic text-muted-foreground text-center max-w-3xl mx-auto">
+              "A perfect balance of 17 natural minerals and trace elements, preserved in their purest state by nature herself."
+            </div>
           </div>
         </section>
       </main>
