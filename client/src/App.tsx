@@ -22,9 +22,9 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/source" component={Source} />
         <Route path="/products" component={Products} />
+        <Route path="/commitment" component={Commitment} />
         <Route path="/site" component={Site} />
         <Route path="/delivery" component={Delivery} />
-        <Route path="/commitment" component={Commitment} />
         <Route path="/contact" component={Contact} />
         <Route path="/dream" component={Dream} />
         <Route component={NotFound} />
