@@ -22,8 +22,9 @@ export function Navbar() {
     { name: "Our Story", href: "/dream" },
     { name: "Our Water", href: "/source" },
     { name: "Our Products", href: "/products" },
-    { name: "Home Delivery", href: "/delivery" },
     { name: "Our Site", href: "/site" },
+    { name: "Home Delivery", href: "/delivery" },
+    { name: "Our Commitment", href: "/commitment" },
     { name: "Contact", href: "/contact" },
   ];
 

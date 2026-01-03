@@ -12,6 +12,7 @@ import Delivery from "@/pages/delivery";
 import Contact from "@/pages/contact";
 import Dream from "@/pages/dream";
 import Site from "@/pages/site";
+import Commitment from "@/pages/commitment";
 
 function Router() {
   return (
@@ -21,10 +22,11 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/source" component={Source} />
         <Route path="/products" component={Products} />
+        <Route path="/site" component={Site} />
         <Route path="/delivery" component={Delivery} />
+        <Route path="/commitment" component={Commitment} />
         <Route path="/contact" component={Contact} />
         <Route path="/dream" component={Dream} />
-        <Route path="/site" component={Site} />
         <Route component={NotFound} />
       </Switch>
     </>

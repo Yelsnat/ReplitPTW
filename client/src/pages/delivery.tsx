@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
-import { Truck, Calendar, CreditCard, Recycle, MapPin, Clock } from "lucide-react";
-import doorstepImage from "@assets/generated_images/doorstep_delivery_of_water_bottles.png";
+import { Truck, Calendar, CreditCard, MapPin, Clock } from "lucide-react";
 import vanImage from "@assets/generated_images/van_delivering_water_in_countryside.png";
 
 const deliverySteps = [
@@ -99,52 +98,15 @@ export default function Delivery() {
           </div>
         </section>
 
-        {/* Doorstep & Reusable Section */}
-        <section className="container mx-auto px-6 py-12 border-t border-primary/10 text-left">
-          <div className="grid md:grid-cols-2 gap-20 items-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <img src={doorstepImage} alt="Doorstep delivery" className="w-full aspect-[4/5] object-cover shadow-2xl" />
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary flex items-center justify-center text-white p-4 text-center text-xs uppercase tracking-widest leading-tight">
-                Sustainable Reuse
-              </div>
-            </motion.div>
-
-            <div className="space-y-8">
-              <div className="flex items-start gap-4">
-                <Recycle className="w-8 h-8 text-primary shrink-0" />
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-serif text-primary">Helping the Environment</h3>
-                  <div className="space-y-4 text-lg font-light text-muted-foreground leading-relaxed">
-                    <p>
-                      Our plastic and glass bottles are reusable! Simply leave them out on a delivery day and we will collect them for re-use when we deliver the new ones.
-                    </p>
-                    <p className="bg-primary/5 p-6 border-l-4 border-primary italic">
-                      "We offer a <strong>refund of £3.00</strong> on a box of empty glass bottles returned in good condition."
-                    </p>
-                    <p>
-                      This helps the environment by reducing plastic waste and minimizing the 'water miles' of your supply.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-8">
-                <h4 className="font-serif text-2xl text-primary mb-4">Ready to set up your delivery?</h4>
-                <p className="text-muted-foreground font-light mb-8">
-                  If you have set up a regular order, you can change or amend your order at any time before the delivery day.
-                </p>
-                <div className="flex flex-wrap gap-4">
-                  <a href="/contact" className="inline-block px-10 py-4 bg-primary text-white uppercase tracking-widest text-sm hover:bg-primary/90 transition-colors">
-                    Start Your Order
-                  </a>
-                </div>
-              </div>
-            </div>
+        <section className="container mx-auto px-6 py-12 border-t border-primary/10 text-center">
+          <h4 className="font-serif text-2xl text-primary mb-4">Ready to set up your delivery?</h4>
+          <p className="text-muted-foreground font-light mb-8 max-w-2xl mx-auto">
+            If you have set up a regular order, you can change or amend your order at any time before the delivery day.
+          </p>
+          <div className="flex justify-center gap-4">
+            <a href="/contact" className="inline-block px-10 py-4 bg-primary text-white uppercase tracking-widest text-sm hover:bg-primary/90 transition-colors">
+              Start Your Order
+            </a>
           </div>
         </section>
       </main>
