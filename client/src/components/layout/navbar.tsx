@@ -45,7 +45,7 @@ export function Navbar() {
               alt="Pear Tree Well" 
               className={cn(
                 "h-16 md:h-20 w-auto transition-all duration-300 group-hover:scale-110",
-                (isHome && !isScrolled) ? "brightness-0 invert" : ""
+                (isHome && !isScrolled) ? "brightness-0 invert h-24 md:h-32" : ""
               )}
             />
         </Link>
