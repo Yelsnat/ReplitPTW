@@ -30,24 +30,14 @@ export default function Site() {
             <div className="space-y-8 text-center mb-12">
               <h3 className="text-3xl font-serif text-primary">Location</h3>
               <p className="text-lg font-light text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                Pear Tree Well is situated in a protected area of outstanding natural beauty in the High Weald. Our facility is dedicated to protecting the ancient aquifer that provides our pure mineral water.
+                Pear Tree Well is situated in a protected area of outstanding natural beauty near Uckfield. Our facility is dedicated to protecting the ancient aquifer that provides our pure mineral water.
               </p>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-6 pt-4">
-                <div className="flex items-center gap-3 text-primary">
-                  <MapPin className="w-5 h-5" />
-                  <span className="font-serif text-lg">High Weald, Sussex, RH19</span>
-                </div>
-                <div className="flex items-center gap-3 text-muted-foreground">
-                  <Clock className="w-5 h-5" />
-                  <span className="font-light">Open for visits: Mon-Fri, 9am - 5pm</span>
-                </div>
-              </div>
             </div>
 
             {/* Google Maps directly underneath Location */}
             <div className="aspect-[21/9] bg-muted relative overflow-hidden shadow-2xl group rounded-sm mb-20">
                <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159154.51594957962!2d-0.12461946809765275!3d51.123281691953264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875f106687289d5%3A0x2d3a0670868f1c8e!2sHigh%20Weald%20AONB!5e0!3m2!1sen!2suk!4v1704278400000!5m2!1sen!2suk" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.4831649479495!2d0.0911!3d50.9667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df607d7279326b%3A0x403d5d7647201b0!2sUckfield!5e0!3m2!1sen!2suk!4v1704278400000!5m2!1sen!2suk" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
