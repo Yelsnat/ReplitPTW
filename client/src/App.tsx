@@ -11,6 +11,7 @@ import Products from "@/pages/products";
 import Delivery from "@/pages/delivery";
 import Contact from "@/pages/contact";
 import Dream from "@/pages/dream";
+import Site from "@/pages/site";
 
 function Router() {
   return (
@@ -23,6 +24,7 @@ function Router() {
         <Route path="/delivery" component={Delivery} />
         <Route path="/contact" component={Contact} />
         <Route path="/dream" component={Dream} />
+        <Route path="/site" component={Site} />
         <Route component={NotFound} />
       </Switch>
     </>

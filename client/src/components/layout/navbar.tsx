@@ -23,6 +23,7 @@ export function Navbar() {
     { name: "Our Water", href: "/source" },
     { name: "Our Products", href: "/products" },
     { name: "Home Delivery", href: "/delivery" },
+    { name: "Our Site", href: "/site" },
     { name: "Contact", href: "/contact" },
   ];
 
