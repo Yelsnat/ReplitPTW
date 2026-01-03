@@ -37,9 +37,9 @@ export function Navbar() {
           : "bg-transparent py-6 text-white"
       )}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between">
+      <div className="container-fluid mx-auto px-4 flex items-center justify-between">
         <Link href="/" className={cn(
-          "text-2xl font-serif tracking-widest font-bold uppercase z-50 relative",
+          "text-xl md:text-2xl font-serif tracking-widest font-bold uppercase z-50 relative",
            (isHome && !isScrolled) ? "text-white" : "text-primary"
         )}>
             Pear Tree Well
@@ -47,7 +47,7 @@ export function Navbar() {
 
         {/* Desktop Nav */}
         <div className={cn(
-          "hidden md:flex items-center gap-8",
+          "hidden md:flex items-center gap-6",
           (isHome && !isScrolled) ? "text-white" : "text-foreground"
         )}>
           {navLinks.map((link) => (
