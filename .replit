@@ -15,12 +15,6 @@ externalPort = 3001
 
 [env]
 PORT = "5000"
-SMTP_HOST = "smtp.gmail.com"
-SMTP_PORT = "587"
-SMTP_SECURE = "false"
-SMTP_USER = "websiteenquirypeartreewell@gmail.com"
-SMTP_PASS = "websiteenquiry1!"
-CONTACT_EMAIL = "bmwtansley@gmail.com"
 
 [deployment]
 deploymentTarget = "static"
