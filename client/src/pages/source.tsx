@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import textureImage from "@assets/generated_images/nature_texture_wet_leaves_and_stone.png";
+import strataBackground from "@assets/generated_images/subtle_underground_rock_strata_texture.png";
 
 const mineralAnalysis = [
   { name: "Calcium", value: "24", unit: "mg/L" },
@@ -45,23 +46,39 @@ export default function Source() {
         </section>
 
         {/* Origin Section */}
-        <section className="py-12 bg-white overflow-hidden border-b border-primary/5">
-          <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto space-y-8">
-              <h2 className="text-4xl md:text-5xl font-serif text-primary leading-tight text-center">
+        <section className="relative py-24 overflow-hidden border-b border-primary/5">
+          {/* Background Image with High Transparency */}
+          <div 
+            className="absolute inset-0 z-0 opacity-10 pointer-events-none"
+            style={{ 
+              backgroundImage: `url(${strataBackground})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          />
+          
+          <div className="container relative z-10 mx-auto px-6">
+            <div className="max-w-4xl mx-auto space-y-12">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-primary leading-tight text-center">
                 A gift from the ancient strata.
               </h2>
-              <div className="grid md:grid-cols-3 gap-8 text-muted-foreground font-light leading-relaxed text-lg text-center pt-8">
-                <p>
-                  Pear Tree Well originates from a protected aquifer deep within the High Weald. 
-                  Unlike mountain springs, our water undergoes a journey of deep subterranean filtration.
-                </p>
-                <p>
-                  Resting 120ft beneath the surface, the water is naturally protected and slowly enriched by the surrounding rock formations over thousands of years.
-                </p>
-                <p>
-                  The result is a remarkably stable and balanced mineral profile, creating a taste that is both crisp and characterful.
-                </p>
+              <div className="grid md:grid-cols-3 gap-12 text-muted-foreground font-light leading-relaxed text-lg text-center pt-4">
+                <div className="space-y-4">
+                  <p>
+                    Pear Tree Well originates from a protected aquifer deep within the High Weald. 
+                    Unlike mountain springs, our water undergoes a journey of deep subterranean filtration.
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <p>
+                    Resting 120ft beneath the surface, the water is naturally protected and slowly enriched by the surrounding rock formations over thousands of years.
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <p>
+                    The result is a remarkably stable and balanced mineral profile, creating a taste that is both crisp and characterful.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
