@@ -68,7 +68,7 @@ export default function Products() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto px-6"
           >
-            <span className="text-3xl md:text-5xl font-serif text-primary mb-4 block">The Collection</span>
+            <span className="text-3xl md:text-5xl font-serif text-primary mb-4 block leading-tight">The Collection</span>
             <p className="text-xl font-light text-muted-foreground leading-relaxed">
               Pure mineral water from the heart of the High Weald, curated for every occasion.
             </p>
