@@ -16,7 +16,7 @@ export default function Site() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto px-6"
           >
-            <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">Visit Us</span>
+            <span className="text-3xl md:text-5xl font-serif text-primary mb-4 block">The Site</span>
             <p className="text-xl font-light text-muted-foreground leading-relaxed">
               Located in the heart of the High Weald, Sussex. Come and discover the source of our treasure.
             </p>

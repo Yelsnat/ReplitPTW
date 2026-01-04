@@ -17,7 +17,7 @@ export default function Commitment() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto px-6"
           >
-            <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">Our Responsibility</span>
+            <span className="text-3xl md:text-5xl font-serif text-primary mb-4 block">The Responsibility</span>
             <p className="text-xl font-light text-muted-foreground leading-relaxed">
               Preserving the purity of the High Weald for generations to come through sustainable practices and innovative packaging.
             </p>
