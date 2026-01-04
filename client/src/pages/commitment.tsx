@@ -3,6 +3,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { Recycle, Leaf, Droplets, ShieldCheck } from "lucide-react";
 import commitmentImage from "@assets/generated_images/nature_texture_wet_leaves_and_stone.png";
+import sustainableBg from "@assets/generated_images/minimalist_leaf_and_water_texture.png";
 
 export default function Commitment() {
   return (
@@ -24,9 +25,20 @@ export default function Commitment() {
           </motion.div>
         </section>
 
-        <section className="py-12 bg-white">
-          <div className="container mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
+        <section className="relative py-24 overflow-hidden border-b border-primary/5">
+          {/* Background Image with High Transparency */}
+          <div 
+            className="absolute inset-0 z-0 opacity-10 pointer-events-none"
+            style={{ 
+              backgroundImage: `url(${sustainableBg})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          />
+
+          <div className="container relative z-10 mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-16 items-start">
+              {/* Sustainable Packaging */}
               <div className="space-y-8">
                 <div className="flex items-start gap-4 text-left">
                   <ShieldCheck className="w-8 h-8 text-primary shrink-0" />
@@ -40,8 +52,11 @@ export default function Commitment() {
                     </p>
                   </div>
                 </div>
+              </div>
 
-                <div className="flex items-start gap-4 text-left pt-8">
+              {/* The Refund Program */}
+              <div className="space-y-8">
+                <div className="flex items-start gap-4 text-left">
                   <Recycle className="w-8 h-8 text-primary shrink-0" />
                   <div className="space-y-4">
                     <h3 className="text-3xl font-serif text-primary">The Refund Program</h3>
