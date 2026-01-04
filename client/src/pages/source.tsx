@@ -59,26 +59,10 @@ export default function Source() {
           
           <div className="container relative z-10 mx-auto px-6">
             <div className="max-w-4xl mx-auto space-y-12">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-primary leading-tight text-center">
-                A gift from the ancient strata.
-              </h2>
-              <div className="grid md:grid-cols-3 gap-12 text-muted-foreground font-light leading-relaxed text-lg text-center pt-4">
-                <div className="space-y-4">
-                  <p>
-                    Pear Tree Well originates from a protected aquifer deep within the High Weald. 
-                    Unlike mountain springs, our water undergoes a journey of deep subterranean filtration.
-                  </p>
-                </div>
-                <div className="space-y-4">
-                  <p>
-                    Resting 120ft beneath the surface, the water is naturally protected and slowly enriched by the surrounding rock formations over thousands of years.
-                  </p>
-                </div>
-                <div className="space-y-4">
-                  <p>
-                    The result is a remarkably stable and balanced mineral profile, creating a taste that is both crisp and characterful.
-                  </p>
-                </div>
+              <div className="text-center space-y-8">
+                <p className="text-xl md:text-2xl font-light text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                  Pear Tree Well originates from a protected aquifer resting 120ft beneath the surface of the High Weald. Unlike mountain springs, our water undergoes a journey of deep subterranean filtration, naturally protected and slowly enriched by ancient rock formations over thousands of years. The result is a remarkably stable and balanced mineral profile, creating a taste that is both crisp and characterful—nature's own creation, untouched and pure.
+                </p>
               </div>
             </div>
           </div>
