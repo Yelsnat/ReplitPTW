@@ -7,15 +7,12 @@ export function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
-            <Link href="/" className="flex flex-col gap-6 mb-8 group">
+            <Link href="/" className="flex flex-col gap-2 mb-8 group">
                 <img 
                   src={logoNoBg} 
                   alt="Pear Tree Well" 
-                  className="w-32 h-auto rounded-lg shadow-xl transition-transform duration-300 group-hover:scale-105" 
+                  className="w-32 md:w-48 h-auto brightness-0 invert transition-transform duration-300 group-hover:scale-105" 
                 />
-                <span className="text-3xl font-serif font-bold uppercase tracking-widest block text-white">
-                    Pear Tree Well
-                </span>
             </Link>
             <p className="max-w-md text-primary-foreground/70 font-light mb-8">
               Naturally structured mineral water from the heart of the High Weald. 
