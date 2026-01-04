@@ -89,14 +89,14 @@ export default function Products() {
                   className="group text-center"
                 >
                   <Link href="/contact" className="block cursor-pointer">
-                    <div className="relative aspect-[3/4] mb-6 bg-gray-50 flex items-center justify-center p-8 overflow-hidden group-hover:bg-gray-100 transition-colors duration-300">
+                    <div className="relative aspect-[3/4] bg-gray-50 flex items-center justify-center p-8 overflow-hidden group-hover:bg-gray-100 transition-colors duration-300">
                       <img 
                         src={productImage} 
                         alt={product.name}
                         className="h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
-                    <div className="bg-gray-50 px-4 py-6 group-hover:bg-gray-100 transition-colors duration-300">
+                    <div className="bg-gray-50 px-4 py-6 group-hover:bg-gray-100 transition-colors duration-300 border-t border-gray-100/50">
                       <h3 className="text-xl font-serif text-primary mb-1 leading-tight">{product.name}</h3>
                       <p className="text-muted-foreground text-sm mb-4">{product.size} {product.type}</p>
                       <span className="text-xs uppercase tracking-widest border-b border-primary/20 pb-1 group-hover:border-primary transition-colors">
