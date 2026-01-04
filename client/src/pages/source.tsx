@@ -29,6 +29,21 @@ export default function Source() {
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <main className="pt-32">
+        {/* Clean Header */}
+        <section className="bg-background py-16 mb-0 text-center border-b border-primary/5">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-3xl mx-auto px-6"
+          >
+            <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">The Composition</span>
+            <p className="text-xl font-light text-muted-foreground leading-relaxed">
+              Filtered through the ancient strata of the High Weald. A unique mineral fingerprint, untouched and pure.
+            </p>
+          </motion.div>
+        </section>
+
         {/* Origin Section */}
         <section className="relative py-24 overflow-hidden border-b border-primary/5">
           {/* Background Image with High Transparency */}

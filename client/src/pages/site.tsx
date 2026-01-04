@@ -8,6 +8,21 @@ export default function Site() {
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <main className="pt-32">
+        {/* Clean Header without ribbon */}
+        <section className="bg-background py-16 mb-0 text-center border-b border-primary/5">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-3xl mx-auto px-6"
+          >
+            <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">Visit Us</span>
+            <p className="text-xl font-light text-muted-foreground leading-relaxed">
+              Located in the heart of the High Weald, Sussex. Come and discover the source of our treasure.
+            </p>
+          </motion.div>
+        </section>
+
         {/* Location Section */}
         <section className="py-12 bg-white">
           <div className="container mx-auto px-6 max-w-5xl">
