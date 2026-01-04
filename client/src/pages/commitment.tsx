@@ -60,21 +60,6 @@ export default function Commitment() {
                   </div>
                 </div>
               </div>
-
-              <div className="relative">
-                <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  className="aspect-[4/5] overflow-hidden shadow-2xl"
-                >
-                  <img src={commitmentImage} alt="Nature and sustainability" className="w-full h-full object-cover" />
-                </motion.div>
-                <div className="absolute -bottom-6 -left-6 bg-primary text-white p-8 max-w-xs hidden lg:block">
-                  <Leaf className="w-8 h-8 mb-4" />
-                  <p className="font-serif text-xl italic">"Preserving the source, protecting the future."</p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
