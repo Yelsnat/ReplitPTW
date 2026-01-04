@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import logoBg from "@/assets/Logo_Upscaled.jpg";
+import logoNoBg from "@/assets/Logo_No_Background.png";
 
 export function Footer() {
   return (
@@ -9,7 +9,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="flex flex-col gap-6 mb-8 group">
                 <img 
-                  src={logoBg} 
+                  src={logoNoBg} 
                   alt="Pear Tree Well" 
                   className="w-32 h-auto rounded-lg shadow-xl transition-transform duration-300 group-hover:scale-105" 
                 />
