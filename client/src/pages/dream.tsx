@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
-import dreamImage from "@assets/generated_images/ethereal_dream_of_treasure_under_a_pear_tree_in_water.png";
+import dreamBackground from "@assets/generated_images/enchanted_pear_orchard_with_soft_sunlight.png";
+import waterBackground from "@assets/generated_images/deep_crystal_clear_underground_water_texture.png";
 
 export default function Dream() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <main className="pt-32">
-        {/* Clean Header without ribbon */}
+        {/* Clean Header */}
         <section className="bg-background py-16 mb-0 text-center border-b border-primary/5">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -24,9 +25,17 @@ export default function Dream() {
           </motion.div>
         </section>
 
-        {/* Section 1: The Vision */}
-        <section className="py-12 bg-white overflow-hidden">
-          <div className="container mx-auto px-6 max-w-4xl text-left">
+        {/* Section 1: The Vision (The Dream) */}
+        <section className="relative py-32 overflow-hidden">
+          <div 
+            className="absolute inset-0 z-0 opacity-10 pointer-events-none"
+            style={{ 
+              backgroundImage: `url(${dreamBackground})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          />
+          <div className="container relative z-10 mx-auto px-6 max-w-4xl text-left">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -47,8 +56,8 @@ export default function Dream() {
           </div>
         </section>
 
-        {/* Section 2: The Treasure */}
-        <section className="py-12 bg-primary text-white overflow-hidden">
+        {/* Section 2: The Revelation */}
+        <section className="py-24 bg-primary text-white overflow-hidden">
           <div className="container mx-auto px-6 max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -71,9 +80,17 @@ export default function Dream() {
           </div>
         </section>
 
-        {/* Section 3: The Reality */}
-        <section className="py-12 bg-white">
-          <div className="container mx-auto px-6 max-w-4xl">
+        {/* Section 3: The Reality (The Treasure) */}
+        <section className="relative py-32 overflow-hidden bg-white">
+          <div 
+            className="absolute inset-0 z-0 opacity-10 pointer-events-none"
+            style={{ 
+              backgroundImage: `url(${waterBackground})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          />
+          <div className="container relative z-10 mx-auto px-6 max-w-4xl">
              <motion.div 
                initial={{ opacity: 0, y: 30 }}
                whileInView={{ opacity: 1, y: 0 }}
