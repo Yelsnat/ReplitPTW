@@ -94,6 +94,12 @@ export default function Source() {
                 </motion.div>
               ))}
             </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-xs text-muted-foreground/60 italic font-light tracking-wide">
+                *Typical mineral composition. May vary by season.
+              </p>
+            </div>
           </div>
         </section>
       </main>
