@@ -52,7 +52,7 @@ export function Navbar() {
 
         {/* Desktop Nav */}
         <div className={cn(
-          "hidden md:flex items-center gap-6",
+          "hidden md:flex items-center gap-8",
           (isHome && !isScrolled) ? "text-white" : "text-foreground"
         )}>
           {navLinks.map((link) => (
@@ -60,11 +60,16 @@ export function Navbar() {
               key={link.name}
               href={link.href}
               className={cn(
-                "text-sm uppercase tracking-widest hover:opacity-70 transition-opacity",
-                location === link.href && "font-semibold border-b border-current"
+                "relative text-sm uppercase tracking-widest transition-colors duration-300 group py-1",
+                location === link.href ? "font-semibold" : "opacity-80 hover:opacity-100"
               )}
             >
               {link.name}
+              <span className={cn(
+                "absolute bottom-0 left-0 h-[1px] transition-all duration-300 group-hover:w-full",
+                location === link.href ? "w-full" : "w-0",
+                (isHome && !isScrolled) ? "bg-white" : "bg-primary"
+              )} />
             </Link>
           ))}
         </div>
