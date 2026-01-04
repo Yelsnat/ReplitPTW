@@ -37,7 +37,7 @@ export default function Source() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto px-6"
           >
-            <span className="text-3xl md:text-5xl font-serif text-primary mb-4 block leading-tight">The Composition</span>
+            <span className="text-3xl md:text-5xl font-serif text-primary mb-4 block leading-tight">Our Water</span>
             <p className="text-xl font-light text-muted-foreground leading-relaxed">
               Filtered through the ancient strata of the High Weald. A unique mineral fingerprint, untouched and pure.
             </p>

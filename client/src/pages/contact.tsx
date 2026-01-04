@@ -46,7 +46,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto px-6"
           >
-            <span className="text-3xl md:text-5xl font-serif text-primary mb-4 block leading-tight">The Contact</span>
+            <span className="text-3xl md:text-5xl font-serif text-primary mb-4 block leading-tight">Contact Us</span>
             <p className="text-xl font-light text-muted-foreground leading-relaxed">
               Have a question about our water or delivery service? We'd love to hear from you.
             </p>

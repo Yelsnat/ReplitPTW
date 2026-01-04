@@ -20,12 +20,12 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "The Story", href: "/dream" },
-    { name: "The Water", href: "/source" },
-    { name: "The Products", href: "/products" },
-    { name: "The Commitment", href: "/commitment" },
-    { name: "The Location", href: "/site" },
-    { name: "The Service", href: "/delivery" },
+    { name: "Our Story", href: "/dream" },
+    { name: "Our Water", href: "/source" },
+    { name: "Our Products", href: "/products" },
+    { name: "Our Commitment", href: "/commitment" },
+    { name: "Our Location", href: "/site" },
+    { name: "Our Service", href: "/delivery" },
     { name: "Contact Us", href: "/contact" },
   ];
 
