@@ -75,7 +75,7 @@ export default function Site() {
                   <div>
                     <h4 className="text-xl font-serif text-primary mb-2">By Train</h4>
                     <p className="text-muted-foreground font-light leading-relaxed">
-                      The nearest station is East Grinstead (Direct from London Victoria/Bridge). 
+                      The nearest station is Uckfield. 
                       A short 10-minute taxi ride will bring you to our gates.
                     </p>
                   </div>
