@@ -99,9 +99,11 @@ export default function Products() {
                     <div className="bg-gray-50 px-4 py-6 group-hover:bg-gray-100 transition-colors duration-300 border-t border-gray-100/50">
                       <h3 className="text-xl font-serif text-primary mb-1 leading-tight">{product.name}</h3>
                       <p className="text-muted-foreground text-sm mb-4">{product.size} {product.type}</p>
-                      <span className="text-xs uppercase tracking-widest border-b border-primary/20 pb-1 group-hover:border-primary transition-colors">
-                        Inquire Now
-                      </span>
+                      <div className="overflow-hidden h-6">
+                        <span className="text-xs uppercase tracking-widest border-b border-primary/20 pb-1 group-hover:border-primary transition-all duration-300 transform translate-y-full group-hover:translate-y-0 inline-block opacity-0 group-hover:opacity-100">
+                          Inquire Now
+                        </span>
+                      </div>
                     </div>
                   </Link>
                 </motion.div>
