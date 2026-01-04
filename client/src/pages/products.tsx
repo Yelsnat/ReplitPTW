@@ -60,22 +60,6 @@ export default function Products() {
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <main className="pt-32">
-        {/* Clean Header without ribbon */}
-        <section className="bg-background py-16 mb-0 text-center border-b border-primary/5">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl mx-auto px-6"
-          >
-            <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">Our Collection</span>
-            <h1 className="text-5xl md:text-7xl font-serif text-primary mb-8">Our Products</h1>
-            <p className="text-xl font-light text-muted-foreground leading-relaxed">
-              Pure mineral water from the heart of the High Weald, curated for every occasion.
-            </p>
-          </motion.div>
-        </section>
-
         <section className="py-12 bg-white">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16 items-start">

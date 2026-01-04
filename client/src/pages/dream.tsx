@@ -9,22 +9,6 @@ export default function Dream() {
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <main className="pt-32">
-        {/* Clean Header */}
-        <section className="bg-background py-16 mb-0 text-center border-b border-primary/5">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl mx-auto px-6"
-          >
-            <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">The Story of Pear Tree Well</span>
-            <h1 className="text-5xl md:text-7xl font-serif text-primary mb-8">Our Story</h1>
-            <p className="text-xl font-light text-muted-foreground leading-relaxed">
-              The "treasure" beneath the pear tree—a journey of faith, persistence, and nature's gift.
-            </p>
-          </motion.div>
-        </section>
-
         {/* Section 1: The Vision (The Dream) */}
         <section className="relative py-32 overflow-hidden">
           <div 
