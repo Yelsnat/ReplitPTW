@@ -37,8 +37,7 @@ export default function Source() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto px-6"
           >
-            <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">The Composition</span>
-            <h1 className="text-5xl md:text-7xl font-serif text-primary mb-8">Our Water</h1>
+            <span className="text-3xl md:text-5xl font-serif text-primary mb-4 block leading-tight">Our Water</span>
             <p className="text-xl font-light text-muted-foreground leading-relaxed">
               Filtered through the ancient strata of the High Weald. A unique mineral fingerprint, untouched and pure.
             </p>
@@ -59,26 +58,10 @@ export default function Source() {
           
           <div className="container relative z-10 mx-auto px-6">
             <div className="max-w-4xl mx-auto space-y-12">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-primary leading-tight text-center">
-                A gift from the ancient strata.
-              </h2>
-              <div className="grid md:grid-cols-3 gap-12 text-muted-foreground font-light leading-relaxed text-lg text-center pt-4">
-                <div className="space-y-4">
-                  <p>
-                    Pear Tree Well originates from a protected aquifer deep within the High Weald. 
-                    Unlike mountain springs, our water undergoes a journey of deep subterranean filtration.
-                  </p>
-                </div>
-                <div className="space-y-4">
-                  <p>
-                    Resting 120ft beneath the surface, the water is naturally protected and slowly enriched by the surrounding rock formations over thousands of years.
-                  </p>
-                </div>
-                <div className="space-y-4">
-                  <p>
-                    The result is a remarkably stable and balanced mineral profile, creating a taste that is both crisp and characterful.
-                  </p>
-                </div>
+              <div className="text-center space-y-8">
+                <p className="text-xl md:text-2xl font-light text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                  Pear Tree Well originates from a protected aquifer resting 120ft beneath the surface of the High Weald. Unlike mountain springs, our water undergoes a journey of deep subterranean filtration, naturally protected and slowly enriched by ancient rock formations over thousands of years. The result is a remarkably stable and balanced mineral profile, creating a taste that is both crisp and characterful—nature's own creation, untouched and pure.
+                </p>
               </div>
             </div>
           </div>
@@ -109,6 +92,12 @@ export default function Source() {
                   </div>
                 </motion.div>
               ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-xs text-muted-foreground/60 italic font-light tracking-wide">
+                *Typical mineral composition. May vary by season.
+              </p>
             </div>
           </div>
         </section>

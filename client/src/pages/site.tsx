@@ -16,8 +16,7 @@ export default function Site() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto px-6"
           >
-            <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">Visit Us</span>
-            <h1 className="text-5xl md:text-7xl font-serif text-primary mb-8">Our Site</h1>
+            <span className="text-3xl md:text-5xl font-serif text-primary mb-4 block leading-tight">Our Location</span>
             <p className="text-xl font-light text-muted-foreground leading-relaxed">
               Located in the heart of the High Weald, Sussex. Come and discover the source of our treasure.
             </p>
@@ -75,7 +74,7 @@ export default function Site() {
                   <div>
                     <h4 className="text-xl font-serif text-primary mb-2">By Train</h4>
                     <p className="text-muted-foreground font-light leading-relaxed">
-                      The nearest station is East Grinstead (Direct from London Victoria/Bridge). 
+                      The nearest station is Uckfield. 
                       A short 10-minute taxi ride will bring you to our gates.
                     </p>
                   </div>

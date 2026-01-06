@@ -40,8 +40,7 @@ export default function Delivery() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto px-6"
           >
-            <span className="text-sm uppercase tracking-[0.3em] text-primary/60 font-semibold mb-4 block">Our Service</span>
-            <h1 className="text-5xl md:text-7xl font-serif text-primary mb-8">Home Delivery</h1>
+            <span className="text-3xl md:text-5xl font-serif text-primary mb-4 block leading-tight">Our Service</span>
             <p className="text-xl font-light text-muted-foreground leading-relaxed">
               A home delivery of delicious, pure water from Pear Tree Well is easy! 
               We bring the treasure of the High Weald directly to your door.

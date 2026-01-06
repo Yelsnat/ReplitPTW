@@ -24,9 +24,9 @@ export function Navbar() {
     { name: "Our Water", href: "/source" },
     { name: "Our Products", href: "/products" },
     { name: "Our Commitment", href: "/commitment" },
-    { name: "Our Site", href: "/site" },
-    { name: "Home Delivery", href: "/delivery" },
-    { name: "Contact", href: "/contact" },
+    { name: "Our Location", href: "/site" },
+    { name: "Our Service", href: "/delivery" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   return (
@@ -61,10 +61,15 @@ export function Navbar() {
               href={link.href}
               className={cn(
                 "relative text-sm uppercase tracking-widest transition-colors duration-300 group py-1",
-                location === link.href ? "font-semibold" : "opacity-80 hover:opacity-100"
+                location === link.href ? "font-semibold" : ""
               )}
             >
-              {link.name}
+              <span className={cn(
+                "transition-opacity duration-300",
+                (isHome && !isScrolled) ? "text-white opacity-100" : "text-foreground opacity-80 group-hover:opacity-100"
+              )}>
+                {link.name}
+              </span>
               <span className={cn(
                 "absolute bottom-0 left-0 h-[1px] transition-all duration-300 group-hover:w-full",
                 location === link.href ? "w-full" : "w-0",
